@@ -33,12 +33,12 @@ val_file = '/home/wm/PycharmProjects/image_retv/pics/test.txt'
 # Learning params
 learning_rate = 0.01
 num_epochs = 10
-batch_size = 128
+batch_size = 200
 
 # Network params
 dropout_rate = 0.5
-num_classes = 2
-train_layers = ['fc8', 'laten','fc7', 'fc6']
+num_classes = 10
+train_layers = ['fc8', 'laten','fc7']
 
 # How often we want to write the tf.summary data to disk
 display_step = 20

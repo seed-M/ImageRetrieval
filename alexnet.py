@@ -88,11 +88,11 @@ class AlexNet(object):
 
         # Laten Layer: FC and -> sigimod
 
-        laten=fc(dropout7,4096,64,relu=False,name='laten')
+        laten=fc(dropout7,4096,48,relu=False,name='laten')
         latensgm=mysigmoid(laten)
 
         # 8th Layer: FC and return unscaled activations
-        self.fc8 = fc(latensgm, 64, self.NUM_CLASSES, relu=False, name='fc8')
+        self.fc8 = fc(latensgm, 48, self.NUM_CLASSES, relu=False, name='fc8')
 
     def load_initial_weights(self, session):
         """Load weights from file into network.
