@@ -27,25 +27,25 @@ Configuration Part.
 """
 
 # Path to the textfiles for the trainings and validation set
-train_file = '/home/wm/PycharmProjects/image_retv/pics/train.txt'
-val_file = '/home/wm/PycharmProjects/image_retv/pics/test.txt'
+train_file = 'D:/tensorflow/prjs/ImageRetrieval/data/train.txt'
+val_file = 'D:/tensorflow/prjs/ImageRetrieval/data/val.txt'
 
 # Learning params
 learning_rate = 0.01
 num_epochs = 10
-batch_size = 200
+batch_size = 128
 
 # Network params
 dropout_rate = 0.5
-num_classes = 10
+num_classes = 2
 train_layers = ['fc8', 'laten','fc7']
 
 # How often we want to write the tf.summary data to disk
 display_step = 20
 
 # Path for tf.summary.FileWriter and to store model checkpoints
-filewriter_path = "/tmp/finetune_alexnet/tensorboard"
-checkpoint_path = "/tmp/finetune_alexnet/checkpoints"
+filewriter_path = "D:/tensorflow/tmp/finetune_alexnet_laten/tensorboard"
+checkpoint_path = "D:/tensorflow/tmp/finetune_alexnet_laten/checkpoints"
 
 """
 Main Part of the finetuning Script.
